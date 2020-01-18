@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 
 word_list = [line.rstrip('\r\n') for line in sys.stdin.readlines()]
 
+# Shamelessly taken from: https://stackoverflow.com/a/35603850
+
 counts = Counter(word_list)
 
 labels, values = zip(*counts.items())
