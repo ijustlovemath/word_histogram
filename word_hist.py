@@ -20,12 +20,12 @@ values = np.array(values)[indSort]
 
 indexes = np.arange(len(labels))
 
-bar_width = 0.35
+bar_width = 0.
 
-plt.bar(indexes, values)
+plt.bar(indexes, values, width=0.8)
 
 # add labels
-plt.xticks(indexes + bar_width, labels)
+plt.xticks(indexes + bar_width, labels, rotation=45)
 plt.show()
 
 
